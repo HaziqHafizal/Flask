@@ -1,0 +1,93 @@
+/* --- Global Styles --- */
+:root {
+  --primary-color: #5d5d81;
+  --secondary-color: #f7f7f7;
+  --dark-color: #333;
+  --light-color: #fff;
+  --delete-color: #e57373;
+  --update-color: #81c784;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background-color: var(--secondary-color);
+  color: var(--dark-color);
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.content {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--light-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 10px;
+}
+
+/* --- Table Styles --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* --- Form Styles (for when you add the form) --- */
+.form-container {
+  margin-top: 30px;
+}
+
+.form-container input[type="text"] {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-container input[type="submit"] {
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+/* --- Action Buttons --- */
+a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.delete-btn {
+  color: var(--delete-color);
+  margin-right: 10px;
+}
+
+.update-btn {
+  color: var(--update-color);
+}
